@@ -9,13 +9,10 @@ package javaapplication10;
  *
  * @author ASUS
  */
-public class JavaApplication10 {
+public class Cliente {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // hola mundo
+        System.out.println("hola mundo");
     }
-    
+
 }
