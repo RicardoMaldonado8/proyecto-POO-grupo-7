@@ -1,18 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javaapplication10;
 
-/**
- *
- * @author ASUS
- */
 public class Cliente {
-
-    public static void main(String[] args) {
-        System.out.println("hola mundo");
+    /* Atributos */
+    private String nombreCliente;
+    private String correo;
+    
+    /* Constructor */
+    public Cliente (String nombreCliente, String correo){
+        this.nombreCliente = nombreCliente;
+        this.correo = correo;
     }
+    
+    /* Encapsulamiento / GETTER - SETTER */
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+    
+    /* Métodos */
+    
+    /* toString */
 
 }
