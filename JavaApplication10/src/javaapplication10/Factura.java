@@ -49,5 +49,18 @@ public class Factura {
     }
     
     
+    @Override
+    public String toString() {
+        // Formato simple para la factura
+        return "--- FACTURA ---\n" +
+               "N de factura: " + numero + "\n" +
+               "datalles de la compra: " + detalleProducto + "\n" +
+               "total: " + totales + "\n" +
+               "descuento:\n" + descuento + "\n"+
+               "total: " + totales + "\n";
+
+        
+    }
     
 }
+    

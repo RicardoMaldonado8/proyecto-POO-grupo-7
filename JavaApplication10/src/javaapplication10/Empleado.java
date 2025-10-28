@@ -40,7 +40,23 @@ public class Empleado {
     
     /* Métodos */
     
-    /* toString */
+    /*toString */
+    @Override
+    public String toString(){
+        return "Empleado: " + nombreEmpleado + " (Cargo: " + cargo + ", Sueldo: $" + sueldo + ")";
+    }
     
+    /* equals() */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Empleado empleado = (Empleado) o;
+        return nombreEmpleado.equals(empleado.nombreEmpleado); 
+    }
     
+    @Override
+    public int hashCode() {
+        return nombreEmpleado.hashCode();
+    }
 }
