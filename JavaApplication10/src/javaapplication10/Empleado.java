@@ -55,6 +55,7 @@ public class Empleado {
         return nombreEmpleado.equals(empleado.nombreEmpleado); 
     }
     
+    
     @Override
     public int hashCode() {
         return nombreEmpleado.hashCode();

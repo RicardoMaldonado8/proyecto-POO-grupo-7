@@ -44,6 +44,7 @@ public class Cliente {
         return "cliente:"+nombreCliente+ "correo: "+correo+")";
     }
     
+    
     /*hashCode()*/
     @Override
     public int hashCode() {
