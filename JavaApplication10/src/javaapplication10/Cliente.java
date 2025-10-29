@@ -9,7 +9,7 @@ public class Cliente {
     public Cliente (String nombreCliente, String correo){
         this.nombreCliente = nombreCliente;
         this.correo = correo;
-    }
+    } 
     
     /* Encapsulamiento / GETTER - SETTER */
     public String getNombreCliente() {
