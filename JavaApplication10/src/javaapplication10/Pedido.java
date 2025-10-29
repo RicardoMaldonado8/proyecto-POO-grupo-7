@@ -5,6 +5,7 @@ public class Pedido {
     private String productoSeleccionado;
     private int cantidades;
     
+    
     /* Constructor */
     public Pedido (String productoSeleccionado, int cantidades){
         this.productoSeleccionado = productoSeleccionado;

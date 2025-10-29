@@ -7,6 +7,7 @@ public class Factura {
     private int totales;
     private int descuento; 
     
+    
     /* Constructor */
     public Factura (int numero, String detalleProducto, int totales, int descuento){
         this.detalleProducto = detalleProducto;
