@@ -29,7 +29,24 @@ public class Cliente {
     }
     
     /* Métodos */
-    
+    /*equals()*/
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cliente cliente = (Cliente) o;
+        return correo.equals(cliente.correo);
+    }
+   
     /* toString */
-
+    @Override
+    public String toString(){
+        return "cliente:"+nombreCliente+ "correo: "+correo+")";
+    }
+    
+    /*hashCode()*/
+    @Override
+    public int hashCode() {
+        return correo.hashCode();
+    }
 }

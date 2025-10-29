@@ -31,5 +31,10 @@ public class Pedido {
     /* Métodos */
     
     /* toString */
+    @Override
+    public String toString() {
+        return "Pedido de " + productoSeleccionado + " con " + cantidades + " artículos.";
+    }
+    
     
 }
