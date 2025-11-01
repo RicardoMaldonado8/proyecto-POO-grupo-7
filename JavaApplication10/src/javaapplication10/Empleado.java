@@ -60,5 +60,6 @@ public class Empleado {
     @Override
     public int hashCode() {
         return nombreEmpleado.hashCode();
+        
     }
 }

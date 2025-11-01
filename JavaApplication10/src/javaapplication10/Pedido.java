@@ -36,6 +36,7 @@ public class Pedido {
     @Override
     public String toString() {
         return "Pedido de " + producto + " con " + cantidad + " artículos.";
+        
     }
     
     
