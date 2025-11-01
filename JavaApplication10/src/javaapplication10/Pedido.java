@@ -1,32 +1,33 @@
 package javaapplication10;
+import java.util.ArrayList;
 
 public class Pedido {
     /* Atributos */
-    private String productoSeleccionado;
-    private int cantidades;
+    private Producto producto;
+    private int cantidad;
     
     
     /* Constructor */
-    public Pedido (String productoSeleccionado, int cantidades){
-        this.productoSeleccionado = productoSeleccionado;
-        this.cantidades = cantidades;
+    public Pedido (Producto producto, int cantidad){
+        this.producto = producto;
+        this.cantidad = cantidad;
     }
     
     /* Encapsulamiento / GETTER - SETTER */
-    public String getProductoSeleccionado() {
-        return productoSeleccionado;
+    public String getProducto() {
+        return producto;
     }
 
-    public void setProductoSeleccionado(String productoSeleccionado) {
-        this.productoSeleccionado = productoSeleccionado;
+    public void setProducto(Producto producto) {
+        this.producto = producto;
     }
 
     public int getCantidades() {
-        return cantidades;
+        return cantidad;
     }
 
-    public void setCantidades(int cantidades) {
-        this.cantidades = cantidades;
+    public void setCantidades(int cantidad) {
+        this.cantidad = cantidad;
     }
     
     /* Métodos */
@@ -34,7 +35,7 @@ public class Pedido {
     /* toString */
     @Override
     public String toString() {
-        return "Pedido de " + productoSeleccionado + " con " + cantidades + " artículos.";
+        return "Pedido de " + producto + " con " + cantidad + " artículos.";
     }
     
     
