@@ -1,5 +1,6 @@
 package javaapplication10;
 
+
 public class Cliente {
     /* Atributos */
     private String nombreCliente;
